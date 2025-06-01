@@ -81,7 +81,7 @@ class Testcase:
         # 通过xpath匹配方式获取 请选择下拉框(如果使用完整xpth定位元素扣1分）
         self.driver.find_element(by=By.XPATH,value='//*[@id="app"]/div/div[2]/section/div/form/div[4]/div/div/div/span/span/i').click()
         sleep(2)
-        #通过xpth多重匹配选择数据库，此处不用修改。 如果在实验报告代码截图后面能说清楚这个是怎么匹配的，加3分。
+        #通过xpth多重匹配选择数据库，此处不用修改。如果在实验报告代码截图后面能说清楚这个是怎么匹配的，加3分。
         self.driver.find_element(By.XPATH,"//*[@class='el-select-dropdown__wrap el-scrollbar__wrap']//*[text()='数据库']").click()
         sleep(2)
         #通过xpath匹配方式获取 发表按钮 并点击 (如果使用完整xpth定位元素扣1分）
